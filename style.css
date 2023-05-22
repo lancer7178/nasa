@@ -1,0 +1,479 @@
+*{
+    font-family: 'Roboto' sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .5s linear ;
+    }
+    html{
+
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+ body{
+background-color: black;
+}
+
+/* start section navbar */
+.header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+    }
+    .header .logo img{
+        height: 6rem;
+        border-radius: 50%;
+    }
+
+
+    .header .navbar a{
+        margin: 0 .7rem;
+    font-size: 2rem;
+    color: #fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .header .navbar a:hover {
+        color: rgb(57, 45, 167);
+        border-bottom: .2rem solid red;
+        padding-bottom: .5rem;
+    }
+    /* end section navbar */
+    
+    /* start section home */
+    .home{
+        height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./img/earth.jpeg);
+    background-position: center center;
+    background-size: cover;
+    animation: alternateBg 5s linear infinite;
+    }
+    .home .contact{
+    max-width: 60rem;
+    margin-bottom: 520px;
+    }
+    .home .contact h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .home .contact h1{
+   position: relative;
+        font-size: 10rem;
+    color: #fff;
+    padding-left: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+-webkit-text-stroke: 0.3vw white;    
+text-transform: uppercase;
+}
+.home .contact h1::before {
+    font-size: 10rem;
+    padding-left: 23px;
+
+    content: attr(data-text);
+position: absolute;
+color: rgb(4, 64, 230);
+-webkit-text-stroke: 0vw white;    
+border-right: 2px solid red;
+overflow: hidden;
+animation: animate 6s linear infinite;
+height: 100%;
+top: 0;
+left:0 ;
+width: 0;
+}
+@keyframes animate 
+{
+
+    0%
+    {
+        width: 0;
+    }
+    70%
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+    .home .contact p{
+     text-transform: uppercase;
+     font-size: 2rem;
+    line-height: 1.2;
+    font-weight: lighter;
+    padding: 1rem 0;
+    color: #fff;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    section{
+    padding: 2rem 7%;
+    }
+/* end section home */
+
+/* start section planets */
+
+.planets .box-conatiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+gap: 1.5rem;
+
+}
+.heading{
+    text-align: center;
+color: #fff;
+text-transform: uppercase;
+padding: 4rem;
+font-size: 4rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.planets .box-conatiner .box{
+padding: 5rem;
+text-align: center;
+}
+.planets .box-conatiner .box img{
+    height: 12rem;
+    border-radius: 50%;
+}
+.planets .box-conatiner .box h3{
+color: #fff;
+font-size: 2rem;
+padding: .5rem 0;
+}
+.planets .box-conatiner .box .few-info{
+color: #fff;
+font-size: 2rem;
+padding: .5rem 0;
+
+}
+
+.planets .box-conatiner .box:hover{
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+.planets .box-conatiner .box:hover *{
+    color: black;
+}
+.planets .box-conatiner .box a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: white;
+    padding: 1rem 2rem;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    }
+    .btn:hover{
+        margin-left: 10rem;
+    }
+    /* end section planets */
+
+/* start section mission */
+
+.mission .row{
+    display: flex;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.mission .row .imag{
+    flex: 1 1 45rem;
+
+}
+
+.mission .row .contect{
+flex: 1 1 45rem;
+padding: 4rem;
+}
+
+.mission .row .contect h3{
+    font-size: 2rem;
+    color: #fff;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.mission .row .contect p{
+    color: #fff;
+    padding: 1rem 0 ;
+    line-height: 2rem;
+    font-size: 1.2rem;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.mission .row .imag img{
+width: 100%;
+}
+.mission .row .contect .btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+/* end section mission  */
+
+/* start section crew  */
+
+.crews-it{
+    background-color: black;
+    display: grid;
+    margin-left: 40px ;
+    margin-right: 40px; 
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(4,250px )  ;
+    grid-template-rows: repeat(2, 320px);
+    /* align-items: center; */
+    border-radius: 15px;
+    }
+    .crew{
+    
+    height: 200px; 
+    /* height: 280px; */
+    border-radius: 15px;
+text-transform: uppercase;
+    
+    }
+    .crew1{
+        background-color: rgb(58, 75, 107);
+    grid-column: 1 / 3;
+    
+    
+    }
+    .crew2{
+    background-color:rgb(207, 209, 209) ;
+    
+    }.crew3{
+        background-color: rgb(252, 246, 246);
+    grid-row: 2 span;
+    margin-bottom: 10px;
+    /* height: 606px; */
+    height: 550px;
+    }
+    .crew4{
+        background-color: rgb(211, 221, 174);
+    }
+    .crew5{
+        background-color: rgb(63, 59, 82);
+        grid-column: 2/4;
+    
+    
+    }
+ .crew .img-name img{
+        border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 12px;
+    
+    }
+    .crew h3{
+        
+    margin: 10px;
+    position: flex;
+    top: 10px;
+    font-size: 2rem;
+    }
+    
+    
+     .crew .img-name{
+        display: flex;
+    align-items: center;
+    
+    }
+
+
+    .crew  p{
+        margin: 10px;
+    color:rgb(17, 16, 17);
+    font-size: 1.3rem;
+    }
+    .crew   h2{
+    margin: 10px;
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+    }
+
+    /* end section crew  */
+
+/* start section sign in  */
+.contact{
+    margin-top: 600px;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
+.contact .row .map{
+    flex: 1 1 45rem;
+
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+text-align: center;
+
+
+}
+.contact .row form h3{
+    color: #fff;
+font-size: 3rem;
+
+}
+.contact .row form .inputb{
+display: flex;
+align-items: center;
+margin: 2rem;
+border: 1px solid #fff;
+border-radius: 2rem;
+
+}
+
+.contact .row form .inputb input{
+    width: 100%;
+    padding: 2rem;
+background: none;
+color: #fff;
+}
+
+
+
+.btn-sing{
+
+    display: inline-block;
+    background-color: white;
+    padding: 1rem 2rem;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+}
+.btn-sing:hover{
+    letter-spacing: .3rem ;
+background-color: black;
+color: #fff;
+}
+/* end section sign in  */
+
+/* start section footer  */
+
+footer {
+background-color: rgb(0, 0, 0);
+height: 200px;
+width: 80vw;
+color: white;
+padding-top: 50px;
+margin-right: 140px;
+}
+
+
+
+
+
+
+.footer-contact {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+
+.footer-contact h3{
+font-size: 2.5rem;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+
+}
+.footer-contact p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size: 14px;
+}
+
+.socials{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+
+
+}
+
+.socials li{
+margin: 0 10px;
+
+}
+
+.socials a{
+text-decoration: none;
+color: #fff;
+}
+.socials li a {
+font-size: 2rem;
+transition: color 0.4s ease;
+}
+
+.socials :hover i{
+    color: blue;
+}
+.footer-bottom{
+background-color: rgb(5, 5, 5);
+width: 80vw;
+padding: 0px 0 ;
+text-align: center;
+}
+.footer-bottom p{
+    word-spacing: 2px;
+    text-transform: capitalize;
+font-size: 14px;    
+}
+.footer-bottom span{
+text-transform: uppercase;
+opacity: .4;
+font-weight: 200;
+}
+/* end section footer  */
+@media screen and (max-width:600px) {
+
+    .navbar .mediaq{
+display: none;
+
+}
+
+.navbar .mediaqu{
+}
+  }
+
+@media print  {
+
+}
