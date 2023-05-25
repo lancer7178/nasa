@@ -49,17 +49,6 @@ background-color: black;
         border-bottom: .2rem solid red;
         padding-bottom: .5rem;
     }
-   .header .navbar a #navbar-icon{
-    color: #fff;
-
-    }
-
-    .header .navbar   a:hover #navbar-icon:hover{
-transform: color .3 ease;
-color: red;
-    }
-
-
 
     /* end section navbar */
     
@@ -98,7 +87,7 @@ text-transform: uppercase;
 
     content: attr(data-text);
 position: absolute;
-color: #00b0f0 ;
+color: #002cf0 ;
 -webkit-text-stroke: 0vw white;    
 border-right: 2px solid red;
 overflow: hidden;
