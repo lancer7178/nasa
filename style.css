@@ -476,20 +476,30 @@ display: none;
 }
 
 .home .contact h3{
-font-size: 20px;
+font-size: 28px;
 }
 .home .contact h1 {
-font-size: 17px;
+font-size: 100px;
 margin-top: 10px;
 color:white
+
 }
 .home .contact p {
-font-size: 9px;
-width: 260px;
+font-size: 18px;
+width: 300px;
+color: white;
+
 }
 .home .contact h1 ::before{
-animation: animate 1s ;
-height: 0%;
+animation: animate 2s ;
+height: 10%;
+overflow: hidden;
+font-size: 60px;
+top: 0;
+left:0 ;
+width: 0;
+-webkit-text-stroke: 0vw white;    
+
 }
 
 
@@ -501,9 +511,9 @@ height: 0%;
     {
         width: 0;
     }
-    80%
+    10%
     {
-        width: 24%;
+        width: 55%;
     }
 }
 .crew .heading {
