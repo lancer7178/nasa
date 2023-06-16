@@ -472,7 +472,7 @@ display: none;
 }
 .home .contact {
     margin-bottom: 0%;
-    margin-top: 70px;
+    margin-top: 83px;
 }
 
 .home .contact h3{
@@ -511,9 +511,9 @@ width: 0;
     {
         width: 0;
     }
-    10%
+    80%
     {
-        width: 55%;
+        width: 90%;
     }
 }
 .crew .heading {
