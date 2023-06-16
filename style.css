@@ -464,10 +464,58 @@ opacity: .4;
 font-weight: 200;
 }
 /* end section footer  */
+
 @media screen and (max-width:600px) {
 
     .navbar .mediaq{
 display: none;
+}
+.home .contact {
+    margin-bottom: 0%;
+    margin-top: 70px;
+}
+
+.home .contact h3{
+font-size: 20px;
+}
+.home .contact h1 {
+font-size: 17px;
+margin-top: 10px;
+color:white
+}
+.home .contact p {
+font-size: 9px;
+width: 260px;
+}
+.home .contact h1 ::before{
+animation: animate 1s ;
+height: 0%;
+}
+
+
+
+@keyframes animate 
+{
+
+    0%
+    {
+        width: 0;
+    }
+    80%
+    {
+        width: 24%;
+    }
+}
+.crew .heading {
+display: none;
+
+}
+.crew .crews-it {
+display: none;
+
+}
+.contact{
+    margin-top: 0;
 
 }
 }
